@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Mahindra First Choice</title>
+  <div class="header">
+  <h2></h2></br></br>
+  </div>
+<style>
+@import url(static/img/travel1.jpg);
+body {
+	  background:#2d3b36 url(https://raw.githubusercontent.com/RounakPython/Capstone_Project_Mahindra_First_Choice_Services/main/templates/Background.jpg)no-repeat center center fixed;
+  	-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+    padding-top:40px;
+}
+
+form {
+    margin-left:auto;
+    margin-right:auto;
+    width: 343px;
+    height: 760px;
+    padding:30px;
+    border: 1px solid rgba(0,0,0,.2);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background: rgba(0, 0, 0, 0.5); 
+    -moz-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    overflow: hidden; 
+}
+
+textarea{
+	  background: rgba(255, 255, 255, 0.4) url(https://raw.githubusercontent.com/RounakPython/Capstone_Project_Mahindra_First_Choice_Services/main/templates/Background.jpg) no-repeat scroll 16px 16px; 
+    width: 250px;
+    height: 110px;
+    border: 1px solid rgba(255,255,255,.6);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; 
+    display:block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:18px;
+    color:#7FFFD4;
+    padding-left:45px;
+    padding-right:20px;
+    padding-top:12px;
+    margin-bottom:20px;
+    overflow:hidden;
+}
+
+input {
+    width: 250px;
+    height: 42px;
+    border: 1px solid rgba(255,255,255,.4);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; 
+    display:block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:15px;
+    color:#7FFFD4;
+    padding-left:20px;
+    padding-right:20px;
+    margin-bottom:20px;
+}
+select{
+    width: 250px;
+    height: 42px;
+    border: 1px solid rgba(255,255,255,.4);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; 
+    display:block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:15px;
+    color:#7FFFD4;
+    padding-left:20px;
+    padding-right:20px;
+    margin-bottom:20px;
+}
+
+input[type=submit] {
+    cursor:pointer;
+}
+
+input.name {
+	  background: rgba(255, 255, 255, 0.4) url(http://luismruiz.com/img/gemicon_name.png) no-repeat scroll 16px 16px; 
+	  padding-left:35px;
+}
+
+select{
+    background: rgba(255, 255, 255, 0.4) url(http://luismruiz.com/img/gemicon_name.png) no-repeat scroll 16px 16px; 
+	  padding-left:35px;
+}
+
+input.email {
+	  background: rgba(255, 255, 255, 0.4) url(http://luismruiz.com/img/gemicon_email.png) no-repeat scroll 16px 20px;
+	  padding-left:35px;
+}
+
+input.message {
+	  background: rgba(255, 255, 255, 0.4) url(http://luismruiz.com/img/gemicon_message.png) no-repeat scroll 16px 16px;
+	  padding-left:35px;
+}
+
+::-webkit-input-placeholder {
+	  color: #7FFFD4;
+}
+
+:-moz-placeholder{ 
+    color: #7FFFD4; 
+}
+
+::-moz-placeholder {
+    color: #7FFFD4;
+}
+
+:-ms-input-placeholder {  
+	  color: #7FFFD4; 
+}
+
+input:focus, textarea:focus, select:focus{ 
+	  background-color: rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+    -webkit-box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+    box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+	  overflow: hidden; 
+}
+
+.btn {
+	  width: 138px;
+	  height: 44px;
+	  -moz-border-radius: 4px;
+	  -webkit-border-radius: 4px;
+	  border-radius: 4px;
+	  float:right;
+    border: 1px solid #253737;
+    background: #416b68;
+    background: -webkit-gradient(linear, left top, left bottom, from(#6da5a3), to(#416b68));
+    background: -webkit-linear-gradient(top, #6da5a3, #416b68);
+    background: -moz-linear-gradient(top, #6da5a3, #416b68);
+    background: -ms-linear-gradient(top, #6da5a3, #416b68);
+    background: -o-linear-gradient(top, #6da5a3, #416b68);
+    background-image: -ms-linear-gradient(top, #6da5a3 0%, #416b68 100%);
+    padding: 10.5px 21px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    -moz-box-shadow: rgba(255,255,255,0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    box-shadow: rgba(255,255,255,0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    text-shadow: #333333 0 1px 0;
+    color: #e1e1e1;
+}
+
+.btn:hover {
+    border: 1px solid #253737;
+    text-shadow: #333333 0 1px 0;
+    background: #416b68;
+    background: -webkit-gradient(linear, left top, left bottom, from(#77b2b0), to(#416b68));
+    background: -webkit-linear-gradient(top, #77b2b0, #416b68);
+    background: -moz-linear-gradient(top, #77b2b0, #416b68);
+    background: -ms-linear-gradient(top, #77b2b0, #416b68);
+    background: -o-linear-gradient(top, #77b2b0, #416b68);
+    background-image: -ms-linear-gradient(top, #77b2b0 0%, #416b68 100%);
+    color: #7FFFD4;
+ }
+
+.btn:active {
+    margin-top:1px;
+    text-shadow: #333333 0 -1px 0;
+    border: 1px solid #253737;
+    background: #6da5a3;
+    background: -webkit-gradient(linear, left top, left bottom, from(#416b68), to(#416b68));
+    background: -webkit-linear-gradient(top, #416b68, #609391);
+    background: -moz-linear-gradient(top, #416b68, #6da5a3);
+    background: -ms-linear-gradient(top, #416b68, #6da5a3);
+    background: -o-linear-gradient(top, #416b68, #6da5a3);
+    background-image: -ms-linear-gradient(top, #416b68 0%, #6da5a3 100%);
+    color: #7FFFD4;
+    -webkit-box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    -moz-box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+   }
+.header {
+  padding: 20px;
+  text-align: center;
+  color: brown;
+  font-size: 25px;
+}
+.result {
+  padding: 20px;
+  text-align: left;
+  color: cyan;
+  font-size: 22px;
+}
+</style>
+</head>
+<body>
+<div> 
+<form action="{{ url_for('predict')}}" method="post">
+    <select name="Car_Model" required >
+        <option value="" disabled selected>Model of the Car</option>
+		<option value="AUDI A4">AUDI A4</option>
+		<option value="AUDI A6">AUDI A6</option>
+		<option value="AUDI A7">AUDI A7</option>
+		<option value="AUDI A8">AUDI A8</option>
+		<option value="AUDI Q5">AUDI Q5</option>
+		<option value="AUDI Q7">AUDI Q7</option>
+		<option value="AUDI TT">AUDI TT</option>
+		<option value="BMW ">BMW </option>
+		<option value="BMW 3 SERIES">BMW 3 SERIES</option>
+		<option value="BMW 5 SERIES">BMW 5 SERIES</option>
+		<option value="BMW 6 SERIES">BMW 6 SERIES</option>
+		<option value="BMW 7 SERIES">BMW 7 SERIES</option>
+		<option value="BMW BMW X6">BMW BMW X6</option>
+		<option value="BMW BMW-M3">BMW BMW-M3</option>
+		<option value="BMW BMW-M5">BMW BMW-M5</option>
+		<option value="BMW BMW-M6">BMW BMW-M6</option>
+		<option value="BMW MINIS">BMW MINIS</option>
+		<option value="BMW X1">BMW X1</option>
+		<option value="BMW X3">BMW X3</option>
+		<option value="BMW X5">BMW X5</option>
+		<option value="BMW Z4">BMW Z4</option>
+		<option value="DAEWOO CIELO">DAEWOO CIELO</option>
+		<option value="DAEWOO MATIZ">DAEWOO MATIZ</option>
+		<option value="DAEWOO NEXIA">DAEWOO NEXIA</option>
+		<option value="FIAT ">FIAT </option>
+		<option value="FIAT 500">FIAT 500</option>
+		<option value="FIAT ADVENTURE">FIAT ADVENTURE</option>
+		<option value="FIAT GRAND PUNTO">FIAT GRAND PUNTO</option>
+		<option value="FIAT LINEA">FIAT LINEA</option>
+		<option value="FIAT PALIO">FIAT PALIO</option>
+		<option value="FIAT PALIO STILE">FIAT PALIO STILE</option>
+		<option value="FIAT PETRA">FIAT PETRA</option>
+		<option value="FIAT SIENA">FIAT SIENA</option>
+		<option value="FIAT UNO">FIAT UNO</option>
+		<option value="FORCE FORCE ONE">FORCE FORCE ONE</option>
+		<option value="FORCE TRAX">FORCE TRAX</option>
+		<option value="FORD ">FORD </option>
+		<option value="FORD ECO SPORT">FORD ECO SPORT</option>
+		<option value="FORD ECOSPORT">FORD ECOSPORT</option>
+		<option value="FORD ENDEAVOUR">FORD ENDEAVOUR</option>
+		<option value="FORD ESCORT">FORD ESCORT</option>
+		<option value="FORD FIESTA">FORD FIESTA</option>
+		<option value="FORD FIGO">FORD FIGO</option>
+		<option value="FORD FOCUS">FORD FOCUS</option>
+		<option value="FORD FUSION">FORD FUSION</option>
+		<option value="FORD IKON">FORD IKON</option>
+		<option value="FORD LIMOUSINE">FORD LIMOUSINE</option>
+		<option value="FORD MONDEO">FORD MONDEO</option>
+		<option value="GENERAL MOTORS ">GENERAL MOTORS </option>
+		<option value="GENERAL MOTORS AVEO">GENERAL MOTORS AVEO</option>
+		<option value="GENERAL MOTORS AVEO UV-A">GENERAL MOTORS AVEO UV-A</option>
+		<option value="GENERAL MOTORS BEAT">GENERAL MOTORS BEAT</option>
+		<option value="GENERAL MOTORS CAPTIVA">GENERAL MOTORS CAPTIVA</option>
+		<option value="GENERAL MOTORS CHEVROLET CRUZE">GENERAL MOTORS CHEVROLET CRUZE</option>
+		<option value="GENERAL MOTORS ENJOY">GENERAL MOTORS ENJOY</option>
+		<option value="GENERAL MOTORS FORESTER">GENERAL MOTORS FORESTER</option>
+		<option value="GENERAL MOTORS OPEL">GENERAL MOTORS OPEL</option>
+		<option value="GENERAL MOTORS OPEL ASTRA">GENERAL MOTORS OPEL ASTRA</option>
+		<option value="GENERAL MOTORS OPEL CORSA">GENERAL MOTORS OPEL CORSA</option>
+		<option value="GENERAL MOTORS OPTRA">GENERAL MOTORS OPTRA</option>
+		<option value="GENERAL MOTORS OPTRA MAGNUM">GENERAL MOTORS OPTRA MAGNUM</option>
+		<option value="GENERAL MOTORS SAIL">GENERAL MOTORS SAIL</option>
+		<option value="GENERAL MOTORS SPARK">GENERAL MOTORS SPARK</option>
+		<option value="GENERAL MOTORS SRV">GENERAL MOTORS SRV</option>
+		<option value="GENERAL MOTORS TAVERA">GENERAL MOTORS TAVERA</option>
+		<option value="GENERAL MOTORS TAVERA NEO">GENERAL MOTORS TAVERA NEO</option>
+		<option value="GENERAL MOTORS TRAILBLAZER">GENERAL MOTORS TRAILBLAZER</option>
+		<option value="GENERAL MOTORS VECTRA">GENERAL MOTORS VECTRA</option>
+		<option value="HINDUSTAN MOTORS AMBASSADOR">HINDUSTAN MOTORS AMBASSADOR</option>
+		<option value="HINDUSTAN MOTORS AVIGO">HINDUSTAN MOTORS AVIGO</option>
+		<option value="HINDUSTAN MOTORS CONTESSA">HINDUSTAN MOTORS CONTESSA</option>
+		<option value="HINDUSTAN MOTORS GRAND">HINDUSTAN MOTORS GRAND</option>
+		<option value="HINDUSTAN MOTORS PUSHPAK">HINDUSTAN MOTORS PUSHPAK</option>
+		<option value="HINDUSTAN MOTORS TREKKER">HINDUSTAN MOTORS TREKKER</option>
+		<option value="HONDA ">HONDA </option>
+		<option value="HONDA ACCORD">HONDA ACCORD</option>
+		<option value="HONDA AMAZE">HONDA AMAZE</option>
+		<option value="HONDA BRIO">HONDA BRIO</option>
+		<option value="HONDA BRV">HONDA BRV</option>
+		<option value="HONDA CITY">HONDA CITY</option>
+		<option value="HONDA CIVIC">HONDA CIVIC</option>
+		<option value="HONDA CR-V">HONDA CR-V</option>
+		<option value="HONDA JAZZ">HONDA JAZZ</option>
+		<option value="HONDA MOBILIO">HONDA MOBILIO</option>
+		<option value="HONDA SAIL">HONDA SAIL</option>
+		<option value="HYUNDAI ">HYUNDAI </option>
+		<option value="HYUNDAI ACCENT">HYUNDAI ACCENT</option>
+		<option value="HYUNDAI ALTO">HYUNDAI ALTO</option>
+		<option value="HYUNDAI CRETA">HYUNDAI CRETA</option>
+		<option value="HYUNDAI ELANTRA">HYUNDAI ELANTRA</option>
+		<option value="HYUNDAI EON">HYUNDAI EON</option>
+		<option value="HYUNDAI GETZ">HYUNDAI GETZ</option>
+		<option value="HYUNDAI I10">HYUNDAI I10</option>
+		<option value="HYUNDAI I20">HYUNDAI I20</option>
+		<option value="HYUNDAI SANTA FE">HYUNDAI SANTA FE</option>
+		<option value="HYUNDAI SANTRO">HYUNDAI SANTRO</option>
+		<option value="HYUNDAI SANTRO XING">HYUNDAI SANTRO XING</option>
+		<option value="HYUNDAI SONATA">HYUNDAI SONATA</option>
+		<option value="HYUNDAI SONATA V-6">HYUNDAI SONATA V-6</option>
+		<option value="HYUNDAI TERRACAN">HYUNDAI TERRACAN</option>
+		<option value="HYUNDAI TUCSON">HYUNDAI TUCSON</option>
+		<option value="HYUNDAI VELOSTER">HYUNDAI VELOSTER</option>
+		<option value="HYUNDAI VERNA">HYUNDAI VERNA</option>
+		<option value="HYUNDAI XCENT">HYUNDAI XCENT</option>
+		<option value="JEEP CHEROKEE">JEEP CHEROKEE</option>
+		<option value="LAND ROVER ROVER">LAND ROVER ROVER</option>
+		<option value="MAHINDRA &  MAHINDRA ">MAHINDRA &  MAHINDRA </option>
+		<option value="MAHINDRA &  MAHINDRA ARMADA">MAHINDRA &  MAHINDRA ARMADA</option>
+		<option value="MAHINDRA &  MAHINDRA BOLERO">MAHINDRA &  MAHINDRA BOLERO</option>
+		<option value="MAHINDRA &  MAHINDRA BOLERO PIK UP">MAHINDRA &  MAHINDRA BOLERO PIK UP</option>
+		<option value="MAHINDRA &  MAHINDRA CLASSIC">MAHINDRA &  MAHINDRA CLASSIC</option>
+		<option value="MAHINDRA &  MAHINDRA COMMANDER">MAHINDRA &  MAHINDRA COMMANDER</option>
+		<option value="MAHINDRA &  MAHINDRA GENIO">MAHINDRA &  MAHINDRA GENIO</option>
+		<option value="MAHINDRA &  MAHINDRA KUV100">MAHINDRA &  MAHINDRA KUV100</option>
+		<option value="MAHINDRA &  MAHINDRA LOGAN D">MAHINDRA &  MAHINDRA LOGAN D</option>
+		<option value="MAHINDRA &  MAHINDRA LOGAN P">MAHINDRA &  MAHINDRA LOGAN P</option>
+		<option value="MAHINDRA &  MAHINDRA MAHINDRA CNG">MAHINDRA &  MAHINDRA MAHINDRA CNG</option>
+		<option value="MAHINDRA &  MAHINDRA MAHINDRA MM">MAHINDRA &  MAHINDRA MAHINDRA MM</option>
+		<option value="MAHINDRA &  MAHINDRA MAHINDRA PIK UP">MAHINDRA &  MAHINDRA MAHINDRA PIK UP</option>
+		<option value="MAHINDRA &  MAHINDRA MARSHAL">MAHINDRA &  MAHINDRA MARSHAL</option>
+		<option value="MAHINDRA &  MAHINDRA MAXX">MAHINDRA &  MAHINDRA MAXX</option>
+		<option value="MAHINDRA &  MAHINDRA MAXXIMO">MAHINDRA &  MAHINDRA MAXXIMO</option>
+		<option value="MAHINDRA &  MAHINDRA QUANTO">MAHINDRA &  MAHINDRA QUANTO</option>
+		<option value="MAHINDRA &  MAHINDRA REVA">MAHINDRA &  MAHINDRA REVA</option>
+		<option value="MAHINDRA &  MAHINDRA SCORPIO CRDE">MAHINDRA &  MAHINDRA SCORPIO CRDE</option>
+		<option value="MAHINDRA &  MAHINDRA SCORPIO NEF">MAHINDRA &  MAHINDRA SCORPIO NEF</option>
+		<option value="MAHINDRA &  MAHINDRA SSANYONG KORANDO">MAHINDRA &  MAHINDRA SSANYONG KORANDO</option>
+		<option value="MAHINDRA &  MAHINDRA SSANYONG REXTON">MAHINDRA &  MAHINDRA SSANYONG REXTON</option>
+		<option value="MAHINDRA &  MAHINDRA SUPRO">MAHINDRA &  MAHINDRA SUPRO</option>
+		<option value="MAHINDRA &  MAHINDRA THAR">MAHINDRA &  MAHINDRA THAR</option>
+		<option value="MAHINDRA &  MAHINDRA TUV300">MAHINDRA &  MAHINDRA TUV300</option>
+		<option value="MAHINDRA &  MAHINDRA VERITO">MAHINDRA &  MAHINDRA VERITO</option>
+		<option value="MAHINDRA &  MAHINDRA XUV 500">MAHINDRA &  MAHINDRA XUV 500</option>
+		<option value="MAHINDRA &  MAHINDRA XYLO">MAHINDRA &  MAHINDRA XYLO</option>
+		<option value="MARUTI SUZUKI ">MARUTI SUZUKI </option>
+		<option value="MARUTI SUZUKI 800">MARUTI SUZUKI 800</option>
+		<option value="MARUTI SUZUKI A STAR">MARUTI SUZUKI A STAR</option>
+		<option value="MARUTI SUZUKI ALTO">MARUTI SUZUKI ALTO</option>
+		<option value="MARUTI SUZUKI ASTAR">MARUTI SUZUKI ASTAR</option>
+		<option value="MARUTI SUZUKI BALENO">MARUTI SUZUKI BALENO</option>
+		<option value="MARUTI SUZUKI BREZZA">MARUTI SUZUKI BREZZA</option>
+		<option value="MARUTI SUZUKI CELERIO">MARUTI SUZUKI CELERIO</option>
+		<option value="MARUTI SUZUKI CIAZ">MARUTI SUZUKI CIAZ</option>
+		<option value="MARUTI SUZUKI EECO">MARUTI SUZUKI EECO</option>
+		<option value="MARUTI SUZUKI ERTIGA">MARUTI SUZUKI ERTIGA</option>
+		<option value="MARUTI SUZUKI ESTEEM 1000">MARUTI SUZUKI ESTEEM 1000</option>
+		<option value="MARUTI SUZUKI ESTEEM 1300">MARUTI SUZUKI ESTEEM 1300</option>
+		<option value="MARUTI SUZUKI ESTILO">MARUTI SUZUKI ESTILO</option>
+		<option value="MARUTI SUZUKI GRAND VITARA">MARUTI SUZUKI GRAND VITARA</option>
+		<option value="MARUTI SUZUKI GYPSY 1000">MARUTI SUZUKI GYPSY 1000</option>
+		<option value="MARUTI SUZUKI GYPSY 1300">MARUTI SUZUKI GYPSY 1300</option>
+		<option value="MARUTI SUZUKI KIZASHI">MARUTI SUZUKI KIZASHI</option>
+		<option value="MARUTI SUZUKI OMNI">MARUTI SUZUKI OMNI</option>
+		<option value="MARUTI SUZUKI RITZ">MARUTI SUZUKI RITZ</option>
+		<option value="MARUTI SUZUKI SWIFT">MARUTI SUZUKI SWIFT</option>
+		<option value="MARUTI SUZUKI SWIFT D,ZIRE">MARUTI SUZUKI SWIFT D,ZIRE</option>
+		<option value="MARUTI SUZUKI SWIFT DZIRE">MARUTI SUZUKI SWIFT DZIRE</option>
+		<option value="MARUTI SUZUKI SX4">MARUTI SUZUKI SX4</option>
+		<option value="MARUTI SUZUKI VERSA">MARUTI SUZUKI VERSA</option>
+		<option value="MARUTI SUZUKI WAGONR">MARUTI SUZUKI WAGONR</option>
+		<option value="MARUTI SUZUKI ZEN">MARUTI SUZUKI ZEN</option>
+		<option value="MARUTI SUZUKI ZEN ESTILO">MARUTI SUZUKI ZEN ESTILO</option>
+		<option value="MERCEDES BENZ C-CLASS">MERCEDES BENZ C-CLASS</option>
+		<option value="MERCEDES BENZ CL-CLASS">MERCEDES BENZ CL-CLASS</option>
+		<option value="MERCEDES BENZ CLK-CLASS">MERCEDES BENZ CLK-CLASS</option>
+		<option value="MERCEDES BENZ CLS-CLASS">MERCEDES BENZ CLS-CLASS</option>
+		<option value="MERCEDES BENZ E-CLASS">MERCEDES BENZ E-CLASS</option>
+		<option value="MERCEDES BENZ G CLASS">MERCEDES BENZ G CLASS</option>
+		<option value="MERCEDES BENZ GL-CLASS">MERCEDES BENZ GL-CLASS</option>
+		<option value="MERCEDES BENZ ML 350">MERCEDES BENZ ML 350</option>
+		<option value="MERCEDES BENZ ML-CLASS">MERCEDES BENZ ML-CLASS</option>
+		<option value="MERCEDES BENZ S 320 CDI L">MERCEDES BENZ S 320 CDI L</option>
+		<option value="MERCEDES BENZ S 350 L">MERCEDES BENZ S 350 L</option>
+		<option value="MERCEDES BENZ S-CLASS">MERCEDES BENZ S-CLASS</option>
+		<option value="MERCEDES BENZ SL-CLASS">MERCEDES BENZ SL-CLASS</option>
+		<option value="MERCEDES BENZ SLK-CLASS">MERCEDES BENZ SLK-CLASS</option>
+		<option value="MITSUBISHI MOTORS CEDIA">MITSUBISHI MOTORS CEDIA</option>
+		<option value="MITSUBISHI MOTORS LANCER">MITSUBISHI MOTORS LANCER</option>
+		<option value="MITSUBISHI MOTORS MONTERO">MITSUBISHI MOTORS MONTERO</option>
+		<option value="MITSUBISHI MOTORS OUTLANDER">MITSUBISHI MOTORS OUTLANDER</option>
+		<option value="MITSUBISHI MOTORS PAJERO">MITSUBISHI MOTORS PAJERO</option>
+		<option value="MORRIS AUSTIN">MORRIS AUSTIN</option>
+		<option value="NISSAN ">NISSAN </option>
+		<option value="NISSAN DATSUN GO">NISSAN DATSUN GO</option>
+		<option value="NISSAN EVALIA">NISSAN EVALIA</option>
+		<option value="NISSAN LAUREL">NISSAN LAUREL</option>
+		<option value="NISSAN MICRA">NISSAN MICRA</option>
+		<option value="NISSAN SUPER SUNNY">NISSAN SUPER SUNNY</option>
+		<option value="NISSAN TEANA">NISSAN TEANA</option>
+		<option value="NISSAN TERRANO">NISSAN TERRANO</option>
+		<option value="NISSAN X-TRAIL">NISSAN X-TRAIL</option>
+		<option value="PORCHE CAYENNE">PORCHE CAYENNE</option>
+		<option value="PORCHE CAYMAN S">PORCHE CAYMAN S</option>
+		<option value="PREMIERÂ AUTOMOBILES PADMINI">PREMIERÂ AUTOMOBILES PADMINI</option>
+		<option value="PREMIERÂ AUTOMOBILES RIO">PREMIERÂ AUTOMOBILES RIO</option>
+		<option value="RENAULT ">RENAULT </option>
+		<option value="RENAULT DUSTER">RENAULT DUSTER</option>
+		<option value="RENAULT FLUENCE">RENAULT FLUENCE</option>
+		<option value="RENAULT KOLEOS">RENAULT KOLEOS</option>
+		<option value="RENAULT KWID">RENAULT KWID</option>
+		<option value="RENAULT LODGY">RENAULT LODGY</option>
+		<option value="RENAULT PULSE">RENAULT PULSE</option>
+		<option value="RENAULT RENAULT 1.9">RENAULT RENAULT 1.9</option>
+		<option value="RENAULT SCALA">RENAULT SCALA</option>
+		<option value="SAN MOTORS SAN STORM 1.2">SAN MOTORS SAN STORM 1.2</option>
+		<option value="SKODA ">SKODA </option>
+		<option value="SKODA FABIA">SKODA FABIA</option>
+		<option value="SKODA LAURA">SKODA LAURA</option>
+		<option value="SKODA OCTAVIA">SKODA OCTAVIA</option>
+		<option value="SKODA RAPID">SKODA RAPID</option>
+		<option value="SKODA ROOMSTER">SKODA ROOMSTER</option>
+		<option value="SKODA SUPERB">SKODA SUPERB</option>
+		<option value="SKODA YETI">SKODA YETI</option>
+		<option value="SONALIKA RHINO RX">SONALIKA RHINO RX</option>
+		<option value="TATA MOTORS ">TATA MOTORS </option>
+		<option value="TATA MOTORS 207">TATA MOTORS 207</option>
+		<option value="TATA MOTORS ACE">TATA MOTORS ACE</option>
+		<option value="TATA MOTORS ARIA">TATA MOTORS ARIA</option>
+		<option value="TATA MOTORS BOLT">TATA MOTORS BOLT</option>
+		<option value="TATA MOTORS INDICA">TATA MOTORS INDICA</option>
+		<option value="TATA MOTORS INDIGO">TATA MOTORS INDIGO</option>
+		<option value="TATA MOTORS INDIGO MANZA">TATA MOTORS INDIGO MANZA</option>
+		<option value="TATA MOTORS INDIGO MARINA">TATA MOTORS INDIGO MARINA</option>
+		<option value="TATA MOTORS JAGUAR XF">TATA MOTORS JAGUAR XF</option>
+		<option value="TATA MOTORS JAGUAR XJ">TATA MOTORS JAGUAR XJ</option>
+		<option value="TATA MOTORS JAGUAR XL">TATA MOTORS JAGUAR XL</option>
+		<option value="TATA MOTORS LAND ROVER DISCOVERY">TATA MOTORS LAND ROVER DISCOVERY</option>
+		<option value="TATA MOTORS LAND ROVER RANGE ROVER">TATA MOTORS LAND ROVER RANGE ROVER</option>
+		<option value="TATA MOTORS MAGIC">TATA MOTORS MAGIC</option>
+		<option value="TATA MOTORS NANO">TATA MOTORS NANO</option>
+		<option value="TATA MOTORS SAFARI">TATA MOTORS SAFARI</option>
+		<option value="TATA MOTORS SIERRA">TATA MOTORS SIERRA</option>
+		<option value="TATA MOTORS SUMO">TATA MOTORS SUMO</option>
+		<option value="TATA MOTORS SUMO GRANDE">TATA MOTORS SUMO GRANDE</option>
+		<option value="TATA MOTORS TIAGO">TATA MOTORS TIAGO</option>
+		<option value="TATA MOTORS TL">TATA MOTORS TL</option>
+		<option value="TATA MOTORS VENTURE">TATA MOTORS VENTURE</option>
+		<option value="TATA MOTORS VISTA">TATA MOTORS VISTA</option>
+		<option value="TATA MOTORS WINGER">TATA MOTORS WINGER</option>
+		<option value="TATA MOTORS XENON XT">TATA MOTORS XENON XT</option>
+		<option value="TATA MOTORS ZEST">TATA MOTORS ZEST</option>
+		<option value="TOYOTA ">TOYOTA </option>
+		<option value="TOYOTA CAMRY">TOYOTA CAMRY</option>
+		<option value="TOYOTA COROLLA">TOYOTA COROLLA</option>
+		<option value="TOYOTA COROLLA ALTIS">TOYOTA COROLLA ALTIS</option>
+		<option value="TOYOTA ETIOS">TOYOTA ETIOS</option>
+		<option value="TOYOTA FORTUNER">TOYOTA FORTUNER</option>
+		<option value="TOYOTA INNOVA">TOYOTA INNOVA</option>
+		<option value="TOYOTA LAND CRUISER PRADO">TOYOTA LAND CRUISER PRADO</option>
+		<option value="TOYOTA QUALIS">TOYOTA QUALIS</option>
+		<option value="TOYOTA TATA-NANO">TOYOTA TATA-NANO</option>
+		<option value="VOLKSWAGEN ">VOLKSWAGEN </option>
+		<option value="VOLKSWAGEN AMEO">VOLKSWAGEN AMEO</option>
+		<option value="VOLKSWAGEN JETTA">VOLKSWAGEN JETTA</option>
+		<option value="VOLKSWAGEN PASSAT">VOLKSWAGEN PASSAT</option>
+		<option value="VOLKSWAGEN POLO">VOLKSWAGEN POLO</option>
+		<option value="VOLKSWAGEN TOUAREG">VOLKSWAGEN TOUAREG</option>
+		<option value="VOLKSWAGEN VENTO">VOLKSWAGEN VENTO</option>
+		<option value="VOLVO VOLVO S80">VOLVO VOLVO S80</option>
+		<option value="VOLVO VOLVO XC90">VOLVO VOLVO XC90</option>
+		<option value="Others">OTHERS</option>
+    </select>
+    
+    <input name="km_read" placeholder="KMs Reading" class="name" required />
+
+    <select name="sales_organization" required>
+        <option value="" disabled selected>Sales Organization</option>
+        <option value="MFCA">MFCA</option>
+        <option value="MFCB">MFCB</option>
+        <option value="MFCC">MFCC</option>
+        <option value="MFCD">MFCD</option>
+        <option value="MFCS">MFCS</option>
+    </select>
+
+    <select name="city" required>
+        <option value="" disabled selected>City</option>
+		<option value="Abohar">Abohar</option>
+		<option value="Ahmednagar">Ahmednagar</option>
+		<option value="Aligarh">Aligarh</option>
+		<option value="Alwar">Alwar</option>
+		<option value="Ambikapur">Ambikapur</option>
+		<option value="Ambur">Ambur</option>
+		<option value="Amritsar">Amritsar</option>
+		<option value="Amroha">Amroha</option>
+		<option value="Anantapur">Anantapur</option>
+		<option value="Aurangabad">Aurangabad</option>
+		<option value="Avadi">Avadi</option>
+		<option value="Bahr">Bahr</option>
+		<option value="Ballia">Ballia</option>
+		<option value="Barmer">Barmer</option>
+		<option value="Begusarai">Begusarai</option>
+		<option value="Belgaum">Belgaum</option>
+		<option value="Bengaluru">Bengaluru</option>
+		<option value="Berhampur">Berhampur</option>
+		<option value="Bhagalpur">Bhagalpur</option>
+		<option value="Bhagpat">Bhagpat</option>
+		<option value="Bhopal">Bhopal</option>
+		<option value="Bhubaneswar">Bhubaneswar</option>
+		<option value="Bikaner">Bikaner</option>
+		<option value="Bikramganj">Bikramganj</option>
+		<option value="Bilaspur">Bilaspur</option>
+		<option value="Boripardhi">Boripardhi</option>
+		<option value="Buldhana">Buldhana</option>
+		<option value="Chengalpattu">Chengalpattu</option>
+		<option value="Chennai">Chennai</option>
+		<option value="Chhatarpur">Chhatarpur</option>
+		<option value="Chhindwara">Chhindwara</option>
+		<option value="Chidambaram">Chidambaram</option>
+		<option value="Chirawa">Chirawa</option>
+		<option value="Chittorgarh">Chittorgarh</option>
+		<option value="Chomu">Chomu</option>
+		<option value="Coimbatore">Coimbatore</option>
+		<option value="Dewas">Dewas</option>
+		<option value="Dhanbad">Dhanbad</option>
+		<option value="Dharmapuri">Dharmapuri</option>
+		<option value="Dindigul">Dindigul</option>
+		<option value="Erode">Erode</option>
+		<option value="Faridabad">Faridabad</option>
+		<option value="Farrukhbad">Farrukhbad</option>
+		<option value="Firozabad">Firozabad</option>
+		<option value="Gangapur">Gangapur</option>
+		<option value="Gaya">Gaya</option>
+		<option value="Ghaziabad">Ghaziabad</option>
+		<option value="Greater Noida">Greater Noida</option>
+		<option value="Gwalior">Gwalior</option>
+		<option value="Haldwani">Haldwani</option>
+		<option value="Hassan">Hassan</option>
+		<option value="Hisar">Hisar</option>
+		<option value="Hospet">Hospet</option>
+		<option value="Hubballi">Hubballi</option>
+		<option value="Hyderabad">Hyderabad</option>
+		<option value="Indapur">Indapur</option>
+		<option value="Indore">Indore</option>
+		<option value="Jaipur">Jaipur</option>
+		<option value="Jajpur">Jajpur</option>
+		<option value="Jalpaiguri">Jalpaiguri</option>
+		<option value="Jhajjar">Jhajjar</option>
+		<option value="Jhansi">Jhansi</option>
+		<option value="Jharsuguda">Jharsuguda</option>
+		<option value="Jhunjhunu">Jhunjhunu</option>
+		<option value="Jodhpur">Jodhpur</option>
+		<option value="Kakinada">Kakinada</option>
+		<option value="Kalaburagi">Kalaburagi</option>
+		<option value="Kalol">Kalol</option>
+		<option value="Karur">Karur</option>
+		<option value="Kashipur">Kashipur</option>
+		<option value="Khammam">Khammam</option>
+		<option value="Kishangarh">Kishangarh</option>
+		<option value="Kochi">Kochi</option>
+		<option value="Kolar">Kolar</option>
+		<option value="Kolhapur">Kolhapur</option>
+		<option value="Kolkata">Kolkata</option>
+		<option value="Kota">Kota</option>
+		<option value="Kotayyam">Kotayyam</option>
+		<option value="Kotputli">Kotputli</option>
+		<option value="Kottakkal">Kottakkal</option>
+		<option value="Kottayam">Kottayam</option>
+		<option value="Kullu">Kullu</option>
+		<option value="Kurnool">Kurnool</option>
+		<option value="Latur">Latur</option>
+		<option value="Ludhiana">Ludhiana</option>
+		<option value="Madurai">Madurai</option>
+		<option value="Malegaon">Malegaon</option>
+		<option value="Mangaldoi">Mangaldoi</option>
+		<option value="Mangalore">Mangalore</option>
+		<option value="Meerut">Meerut</option>
+		<option value="Mehsana">Mehsana</option>
+		<option value="Moga">Moga</option>
+		<option value="Mohali">Mohali</option>
+		<option value="Mohania">Mohania</option>
+		<option value="Mumbai">Mumbai</option>
+		<option value="Mysore">Mysore</option>
+		<option value="Nadiad">Nadiad</option>
+		<option value="Nagda">Nagda</option>
+		<option value="Nagercoil">Nagercoil</option>
+		<option value="Nagpur">Nagpur</option>
+		<option value="Namakkal">Namakkal</option>
+		<option value="Narnaul">Narnaul</option>
+		<option value="Nashik">Nashik</option>
+		<option value="Navi Mumbai">Navi Mumbai</option>
+		<option value="Neemuch">Neemuch</option>
+		<option value="Nellore">Nellore</option>
+		<option value="Neyveli">Neyveli</option>
+		<option value="Nizamabad">Nizamabad</option>
+		<option value="Ongole">Ongole</option>
+		<option value="Palani">Palani</option>
+		<option value="Panchkula">Panchkula</option>
+		<option value="Paradeep">Paradeep</option>
+		<option value="Patiala">Patiala</option>
+		<option value="Patna">Patna</option>
+		<option value="Pinjore">Pinjore</option>
+		<option value="Pollachi">Pollachi</option>
+		<option value="Proddatur">Proddatur</option>
+		<option value="Puducherry">Puducherry</option>
+		<option value="Pudukottai">Pudukottai</option>
+		<option value="Pune">Pune</option>
+		<option value="Raipur">Raipur</option>
+		<option value="Rajsamand">Rajsamand</option>
+		<option value="Ramanathapuram">Ramanathapuram</option>
+		<option value="Ramnagar">Ramnagar</option>
+		<option value="Ranipet">Ranipet</option>
+		<option value="Ratlam">Ratlam</option>
+		<option value="Reengus">Reengus</option>
+		<option value="Rohtak">Rohtak</option>
+		<option value="Rosera">Rosera</option>
+		<option value="Rourkela">Rourkela</option>
+		<option value="Rudrapur">Rudrapur</option>
+		<option value="Salem">Salem</option>
+		<option value="Sangamner">Sangamner</option>
+		<option value="Satna">Satna</option>
+		<option value="Shahpura">Shahpura</option>
+		<option value="Shamli">Shamli</option>
+		<option value="Shimoga">Shimoga</option>
+		<option value="Shirur">Shirur</option>
+		<option value="Shrigonda">Shrigonda</option>
+		<option value="Sikar">Sikar</option>
+		<option value="Solapur">Solapur</option>
+		<option value="Sonepat">Sonepat</option>
+		<option value="Sujangarh">Sujangarh</option>
+		<option value="Surat">Surat</option>
+		<option value="Suryapet">Suryapet</option>
+		<option value="Talcher">Talcher</option>
+		<option value="Thane">Thane</option>
+		<option value="Thanjavur">Thanjavur</option>
+		<option value="Thirupathi">Thirupathi</option>
+		<option value="Thiruvallur">Thiruvallur</option>
+		<option value="Thiruvarur">Thiruvarur</option>
+		<option value="Tiruchirappalli">Tiruchirappalli</option>
+		<option value="Tirunelveli">Tirunelveli</option>
+		<option value="Tirupur">Tirupur</option>
+		<option value="Tuticorin">Tuticorin</option>
+		<option value="Udaipur">Udaipur</option>
+		<option value="Udgir">Udgir</option>
+		<option value="Udumalpet">Udumalpet</option>
+		<option value="Una">Una</option>
+		<option value="Vadali Bhoi">Vadali Bhoi</option>
+		<option value="Vadodara">Vadodara</option>
+		<option value="Vapi">Vapi</option>
+		<option value="Varanasi">Varanasi</option>
+		<option value="Vijayapura">Vijayapura</option>
+		<option value="Vijayawada">Vijayawada</option>
+		<option value="Villupuram">Villupuram</option>
+		<option value="Vyara">Vyara</option>
+		<option value="Wai">Wai</option>
+		<option value="Wardha">Wardha</option>
+		<option value="Yavatmal">Yavatmal</option>
+		<option value="Zirakpur">Zirakpur</option>
+		<option value="Others">OTHERS</option>
+    </select>
+    
+    <select name="item_category" required>
+        <option value="" disabled selected id="item_category" required>Item Category</option>
+		<option value="P001">P001</option>
+		<option value="P002">P002</option>
+		<option value="P010">P010</option>
+		<option value="P011">P011</option>
+    </select>
+
+    <input name="order_item" placeholder="Order Item Count" class="name" required />
+    
+    <select name="target_quantity_UoM" required>
+        <option value="" disabled selected id="target_quantity_UoM" required>Target Quantity UoM</option>
+		<option value="EA">EA</option>
+		<option value="L">L</option>
+		<option value="MIN">MIN</option>
+    </select>
+    
+    <input name="order_quantity" placeholder="Order Quantity" class="name" required />
+    
+    <input name="parts_value" placeholder="Parts Charges in Rupees" class="name" required />
+    
+    <input name="labour_value" placeholder="Labour Charges in Rupees" class="name" required />
+
+    <input name="submit" class="btn" type="submit" value="Predict" />
+    <br><h4 class="result">{{ prediction_text }}<h4>
+</form>
+</div>
+</body>
+</html>
