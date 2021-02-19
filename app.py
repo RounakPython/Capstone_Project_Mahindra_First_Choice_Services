@@ -103,8 +103,8 @@ def predict():
 
        prediction = model.predict([[KMs_Reading, Labour_Total, Parts_Total, Order_Item, Order_Quantity, Cust_Count, Plant_Count, Sales_organization_MFCB, Sales_organization_MFCC, Sales_organization_MFCD, Sales_organization_MFCS, Item_Category_P002, Item_Category_P010, Item_Category_P011, Target_quantity_UoM_L, Target_quantity_UoM_MIN, Car_Model_fcode]])
        
-       total_value = round(prediction[0][0],2)
-       service_time = round(prediction[0][1],2)
+       total_value = abs(round(prediction[0][0],2))
+       service_time = abs(round(prediction[0][1],2))
               
     return render_template('index.html', prediction_text='Service will take '+str(service_time)+' hours to complete and it will cost around '+str(total_value)+' Rupees.')
 
