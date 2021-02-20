@@ -10,3 +10,6 @@ At MFC Services, customers can save up to 20 percent servicing costs as compared
 
 Web Application : <br>
 [MultiOutput Regression Model](https://mahindrafirstchoice.herokuapp.com/)
+<br>
+Full Presentation : <br>
+[Presentation](https://github.com/RounakPython/Capstone_Project_Mahindra_First_Choice_Services/blob/main/MFCS_Final_Presentation.pptx)
